@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Вектор Кавказа</title>
-  <style>
-    html, body { margin: 0; height: 100%; }
-    .cover {
-      min-height: 100vh;
-      background: #0a1628 url("banner.jpg") center / cover no-repeat;
-    }
-  </style>
+  html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #0a1628;
+}
+
+.cover {
+  min-height: 100vh;
+  background: #0a1628 url("banner.jpg") center / cover no-repeat;
+}
+
+@media (max-width: 900px) {
+  .cover {
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 </head>
 <body>
   <div class="cover" role="img" aria-label="Вектор Кавказа. До скорой встречи!"></div>
